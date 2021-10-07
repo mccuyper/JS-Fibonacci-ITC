@@ -17,23 +17,19 @@
             <label for="inputNumber" class="col-sm-2 col-form-label text-end">The Fibonacci Of</label>
             <div class="col-sm-10 d-flex ">
                 <input type="text" class="form-control re-width" id="inputNumber" placeholder="#">
-                <button type="button" class="btn btn-primary ms-3" id="searchButton">Is</button> 
-                <!--onclick="getInputValue();"-->
-                
-                <div>
-                   
+                <button type="button" class="btn btn-primary ms-3" id="searchButton">Is</button>                 
+                <div class="d-flex">
+                    <div class="sp sp-circle"></div>
                     <p id="result"></p>
                 </div>
-             
-               
             </div>
-            <div class="alert alert-danger text-center d-none mt-3" role="alert">Choose number from 1 to 50 only!</div>
+            <div class="alert alert-danger text-center d-none mt-3" role="alert"></div>
         </div>
  
     </div>
     <div class="ms-5 d-flex">
         <h1>Results</h1>
-        <div class="sp sp-circle"></div>  
+        <div class="sp" id='resultSpinner'></div>  
     </div>
     <div id="resultList" class="m-3">
          

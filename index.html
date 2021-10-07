@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Fibonacci</title>
+</head>
+<body>
+    <div class="container m-5"  id="main">
+        <div class="title ps-5">
+            <h1>Fibonacci Calculator</h1>
+        </div>
+        <div class="mb-3 row d-flex">
+            <label for="inputNumber" class="col-sm-2 col-form-label text-end">The Fibonacci Of</label>
+            <div class="col-sm-10 d-flex ">
+                <input type="text" class="form-control re-width" id="inputNumber" placeholder="#">
+                <button type="button" class="btn btn-primary ms-3" id="searchButton">Is</button> 
+                <!--onclick="getInputValue();"-->
+                
+                <div>
+                   
+                    <p id="result"></p>
+                </div>
+             
+               
+            </div>
+            <div class="alert alert-danger text-center d-none mt-3" role="alert">Choose number from 1 to 50 only!</div>
+        </div>
+ 
+    </div>
+    <div class="ms-5 d-flex">
+        <h1>Results</h1>
+        <div class="sp sp-circle"></div>  
+    </div>
+    <div id="resultList" class="m-3">
+         
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

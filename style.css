@@ -1,0 +1,64 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+.re-width {
+    width: 5% !important;
+}
+#result {
+    padding: 5px;
+    margin: 0 0 0 10px;
+    
+}
+
+/* Spinner Circle Rotation */
+.sp {
+	width: 20px;
+	height: 20px;
+	clear: both;
+	margin: 8px 10px 0px;
+}
+.sp-circle {
+    display: none;
+    border: 4px white solid;
+    border-top: 4px black solid;
+    border-radius: 50%;
+    -webkit-animation: spCircRot 0.6s infinite linear;
+    animation: spCircRot 0.6s infinite linear;
+    padding: 12px;
+  }
+  
+  @-webkit-keyframes spCircRot {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+    }
+  }
+  @keyframes spCircRot {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .alert {
+    padding: 0.3rem 0.5rem;
+    width: 16%;
+    margin-left: 150px;
+    font-size: 13px;
+  }
+
+  .lastSearch {
+    padding: 13px;
+    margin-left: 100px;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-bottom: 1px solid;
+  }
